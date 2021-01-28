@@ -1,0 +1,111 @@
+body{
+    padding:0;
+    margin:0;
+    background:black;
+}
+/*nav*/
+
+.logo{
+    width:100%;
+    height:100px;
+    background:#58802a;
+}
+nav .logo .logo_i{
+    position:absolute;
+    top:6px;
+    left:38%;
+}
+/*munu*/
+.munu{
+    list-style:none;
+    text-align:center;
+    
+    
+}
+.munu li{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.munu li .li_div{
+    width:200px;
+    height:30px;
+    background:rgba(91, 28, 119, 0.83);
+    border-radius:25px;
+}
+.munu li .li_div:hover{
+    background:black;
+}
+.munu li .li_div a{
+    font-size:25px;
+    color:aqua;
+    text-decoration: none;
+    
+}
+/*about*/
+.about{
+    width:100%;
+    height:300px;
+    background:#1c190c;
+    color:aliceblue;
+}
+.about .about_s{
+    position:absolute;
+    left:620px;
+    top:170px;
+    color:aliceblue;
+    font-size:40px;
+}
+.about .about_p{
+    text-align:center;
+    position:absolute;
+    top:220px;
+    font-size:20px;
+}
+/*books*/
+.books{
+    width:100%;
+    height:500px;
+    background:#454e10;
+}
+.books .books_s{
+    position:absolute;
+    top:480px;
+    left:630px;
+    font-size:25px;
+    color:aliceblue;
+}
+.books img{
+    width:415px;
+    height:400px;
+    float:left;
+    margin-left:20px;
+    margin-top:80px;
+}
+/*contact us */
+.contact{
+    width:100%;
+    height:200px;
+    background:#1f0404;
+}
+.contact .contact_s{
+    margin-left:620px;
+    margin-top:20px;
+    color:aliceblue;
+    font-size:30px;
+}
+.contact .contact_p{
+    text-align:center;
+    color:aliceblue;
+    font-size:20px;
+    margin-top:20px;
+}
+.contact img{
+    float:left;
+    
+}
+.contact .div_i{
+    margin-left:560px;
+    
+    
+}
