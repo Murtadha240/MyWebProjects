@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title> title </title>
+        <style>
+            body{
+    background-color: 2a272b;
+    margin:0;
+    padding:0;
+}
+.main{
+    margin-top: 10px;
+    margin-left: 50px;
+    width:40%;
+    height:40%;
+    background:#111125;
+    color:chartreuse;
+    border-radius:40px;
+    text-align: center;
+}
+.text{
+    width:80%;
+    height:50%;
+    background:#323b79;
+    color:wheat;
+    font-size: 20px;
+}
+.tow{
+    
+    border-radius:40px;
+    width:40%;
+    height:40%;
+    float:right;
+    background:#111125;
+    position:absolute;
+    right:50px;
+    top:10px;
+}
+.input{
+    background:#323b79;
+    color:aliceblue;
+}
+h2{
+    margin-top:3px;
+ 
+}
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="everyday" ng-controller="up" class="main">
+            <h1>My note</h1>
+        <textarea ng-model="text" class="text"></textarea> <br>
+        <button ng-click="save()">save</button>
+        <button ng-click="clear()">clear</button>
+        <p> number of characters : <span ng-bind="countt()"></span></p>
+            <!-- second -->
+            
+        <div class="tow">
+            <h2> my todo list </h2>
+            <form ng-submit="def()">
+                <input type="text" ng-model="todoInput" class="input">
+                <input type="submit">
+            </form>
+            <br>
+            
+            <div ng-repeat="x in todoList">
+                <input type="checkbox" ng-model="x.done" ng-show="state"> <span ng-bind="x.todoText"></span>
+            </div>
+            <p> <button ng-click="remove()"> Remove Marked </button></p>
+            
+            </div>
+        
+            
+            
+        </div>
+        
+        <script>
+            var cold=angular.module("everyday",[]);
+            cold.controller("up",function($scope){
+                
+                
+                
+                
+                $scope.state=true;
+                $scope.save=function(){
+                    alert("note saved")
+                }
+                $scope.clear=function(){
+                    $scope.text= "";
+                }
+                $scope.countt=function(){
+                    return 100-$scope.text.length;
+                }
+                $scope.todoList=[{todoText:"shop",done:false}];
+                $scope.def=function(){
+                    $scope.todoList.push({todoText:$scope.todoInput})
+                }
+                $scope.remove = function() {
+        var oldList = $scope.todoList;
+        $scope.todoList = [];
+        angular.forEach(oldList, function(x) {
+            if (!x.done) $scope.todoList.push(x);
+        });
+    };
+                
+                
+    
+            });
+        </script>
+    </body>
+</html>
