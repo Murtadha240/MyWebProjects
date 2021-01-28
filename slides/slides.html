@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> welcome </title>
+        <link rel="stylesheet" href="css/testt.css"/>
+        <style>
+            .slider{
+                
+                width:1349px;
+                height:600px;
+                margin:auto;
+                overflow:hidden;
+            }
+            .slider ul:hover{
+                animation-play-state: paused;
+            }
+            
+            .slider ul{
+                padding:0px;
+                width:9443px;
+                list-style:none;
+                position: relative;
+                animation: sliding 20s ease-in-out infinite;
+            }
+            .slider ul li{
+                float:left;
+                position: relative;
+            }
+            @keyframes sliding
+            {
+                0%,14%{left:0;}
+                14%,28%{left:-1349px;}
+                28%,42%{left:-2698px;}
+                42%,56%{left:-4047px;}
+                56%,70%{left:-5396px;}
+                70%,84%{left:-6745px;}
+                84%,98%{left:-8094px;}
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="slider">
+            <ul>
+                <li><img src="a.png"/></li>
+                <li><img src="b.png"/></li>
+                <li><img src="c.png"/></li>
+                <li><img src="d.png"/></li>
+                <li><img src="e.png"/></li>
+                <li><img src="f.png"/></li>
+                <li><img src="g.png"/></li>
+            </ul>
+        </div>
+    </body>
+</html>

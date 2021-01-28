@@ -1,0 +1,8 @@
+/* استيراد خط من كوكل */
+
+/* اعادة القيم الاصلية للمتصفح */
+body, html, * {
+    margin:0px;
+    padding:0px;
+    font-family:inherit;
+}

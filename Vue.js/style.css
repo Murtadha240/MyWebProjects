@@ -1,0 +1,61 @@
+#app{
+    width: 300px;
+    height:500px;
+    background: cyan;
+    margin:50px auto;
+}
+h3{
+    text-align: center;
+    padding:20px;
+}
+p{
+    text-align:center;
+    font-size:20px;
+}
+.s1{
+    position:relative;
+    left:40%;
+    top:0px;
+    font-size:20px;
+}
+.s2{
+    position:relative;
+    left:12%;
+    top:40px;
+    font-size:20px;
+}
+.r{
+    width:90%;
+    position:relative;
+    left:5%;
+    top:80px;
+    
+}
+.total-price{
+    position:relative;
+    top: 100px;
+    background:#483;
+}
+.amout{
+    width:auto;
+    font-size:20px;
+    padding:6px;
+    position: relative;
+    float:left;
+    margin:10px;
+    background:#7482ce;
+    border-radius:20%;
+}
+.total{
+    font-size:20px;
+    padding:6px;
+    position:relative;
+    float:right;
+    margin:10px;
+    margin-right:14px;
+    background:#7482ce;
+    border-radius:20%;
+    top:0px;
+
+    
+}

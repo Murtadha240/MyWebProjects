@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script> 
+    </head>
+    <body>
+        
+        
+      <div id="app">
+          <div class="product">
+              <h3> product title</h3>
+              <p> product description </p>
+              <span class="s1"> price: ${{price}} </span>
+              <span class="s2"> amout:2 </span>
+              <input class="r" type="range" min="1" max="20" step="1" v-model="amount"/>
+              <div class="total-price">
+                  <span class="amout"> amount {{amount}} </span>
+                  <span class="total"> totlal ${{totalp}} </span>
+              </div>
+          </div>
+      </div>
+          
+          
+          
+          
+         
+       <!--commant--> 
+        <script>
+            var q = new Vue({
+                el:"#app",
+                data:{
+                    amount:1,
+                    price:50,
+                    
+                },
+                computed:{
+                    totalp:function(){
+                    return this.amount*this.price;
+                }
+                }
+            });
+        </script>
+    </body>
+</html>

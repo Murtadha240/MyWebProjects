@@ -1,0 +1,309 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:monospace;
+}
+/* navbar */ 
+.navbar{
+    width:100%;
+    height:50px;
+    background:#6c0f6c;
+    text-align:center;
+    
+    
+    
+}
+.navbar ul {
+    list-style:none; 
+    text-align:center;
+    line-height:50px;
+    
+
+}
+.navbar ul li{
+    display:inline-block;
+    
+}
+.navbar ul li a{
+    color:#ff0048;
+    text-decoration:none;
+    font-size:20px;
+}
+.navbar ul li .active{
+    color:#fff;
+}
+/* web folk */
+.web{
+    width:100%;
+    height:600px;
+    background-image: url("images/cover.png");
+    background-size:cover;
+    text-align:center;
+    position:relative;
+    
+    
+    
+}
+.web .folk{
+    padding-top:50px;
+    margin-bottom:80px;
+}
+.web .folk h2{
+    margin-top:0;
+    padding:0;
+    font-size:50px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.web .folk p{
+    letter-spacing:10px;
+    font-size:25px;
+    color:#fff;
+     
+}
+.web .dream p{
+    color:#fff;
+    font-size:25px;
+}
+.web .work{
+    position:absolute;
+    bottom:0;
+    color:#fff;
+    left: 40%;
+    padding:15px;
+    background:#ff0048;
+    width:250px;
+    font-size:20px;
+}
+.web .work:after{
+    content: "";
+    border-top: 20px solid #ff0048;
+    border-right: 20px solid transparent ;
+    border-left: 20px solid transparent;
+    position:relative;
+    top:55px;
+    left:-70px;
+}
+/* Image */
+.image{
+    width:100%;
+}
+.image .img{
+    width:25%;
+    height:252px;
+    background-image:url(Images/image_1.jpg);
+    float:left;
+    
+}
+.image .img .over{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    opacity:0;
+}
+.image .img .over:hover{
+    opacity:1;
+}
+.image .i_1{background:url(Images/image_2.jpg)}
+.image .i_2{background:url(Images/image_3.jpg)}
+.image .i_3{background:url(Images/image_4.jpg)}
+.image .i_4{background:url(Images/image_5.jpg)}
+.image .i_5{background:url(Images/image_6.jpg)}
+.image .i_6{background:url(Images/image_7.jpg)}
+.image .i_7{background:url(Images/image_8.jpg)}
+.image .i_8{background:url(Images/image_9.jpg)}
+.image .i_9{background:url(Images/image_10.jpg)}
+.image .i_10{background:url(Images/image_11.jpg)}
+.image .i_11{background:url(Images/image_12.jpg)}
+
+.clear{clear: both}
+/* meet */
+.meet{
+    width:100%;
+    height:auto;
+    position:relative;
+    text-align:center;
+}
+.meet .head{
+    position:absolute;
+    top:0;
+    background:#f50;
+    width:100%;
+    height:50px;
+    text-align:center;
+    color:#fff;
+    font-size:20px;
+    line-height:50px;
+}
+.meet h2{
+    margin:0;
+    padding:8%;
+    color:#ff0048;
+    font-size:40px;
+}
+.meet .meet_image{
+    display:inline-block;
+    margin-top:20px;
+}
+.meet .meet_image h3{
+    color:#ff0048;
+    font-size:28px;
+    letter-spacing: 5px;
+}
+.meet button{
+    width:150px;
+    background:#000;
+    color:green;
+    padding:10px;
+    cursor:pointer;
+}
+/* end */
+.end{
+    width:100%;
+    height:auto;
+    padding-top:7%;
+    background: url("Images/Cover_2.jpg");
+    text-align:center;
+}
+.end .content{
+    width:400px;
+    display:inline-block;
+    color:#fff;
+    padding-top:8%;
+    font-size:25px;
+}
+.end .content h2{
+    margin:0;
+    padding:0;
+}
+.end button{
+    margin-top:8%;
+    background:#fff;
+    border:0;
+    width:150px;
+    padding:15px;
+    color:#000;
+    cursor:pointer;
+}
+.end .bol{
+    text-align:center;
+    margin-top:10%;
+}
+.end .bol span{
+    width:10px;
+    height:10px;
+    display:inline-block;
+    background:#fff;
+}
+.end .bol span:hover{
+    background: #ff0048;
+}
+/* footer*/
+.footer{
+    width:100%;
+    height:80px;
+    text-align:center;
+    background:#f5f5f5;
+    line-height: 80px;
+    font-size:25px;
+}
+/*************************************** contact.html ************************************/
+
+
+.contact{
+    width:100%;
+    height:800px;
+    text-align:center;
+    padding-top:5%;
+    background:url(Images/coverPage2.PNG);
+    background-size:cover;
+    
+}
+.contact h2{
+    margin:0;
+    font-size:40px;
+    font-style:italic;
+}
+.contact p{
+    font-size:20px;
+}
+.contact .form{
+    width:500px;
+    height:400px;
+    background:#f50;
+    margin:auto;
+}
+.contact .form h2{
+    color:#df1a5a;
+}
+.contact .form input[type=text] , textarea{
+    display:block;
+    width:100%;
+    height:35px;
+    border:0;
+    margin:0;
+    margin-bottom:10px;
+    background:#df1a5a;
+    color:#fff;
+    padding-left:10px;
+    
+}
+textarea{
+    height:200px;
+}
+.contact .form input[type=submit] {
+    float:right;
+    background: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+/* Become */
+.become{
+    width:100%;
+    height:400px;
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 2%;
+}
+.become h2{
+    margin: 0px;
+    color:#df1a5a;
+    font-size:40px;
+}
+.become p{
+    font-size: 25px;
+}
+
+/************** book online*********/
+.contact .cover{
+    width:900px;
+    height:400px;
+    background: #fff;
+    margin:auto;
+    padding: 5%;
+}
+.contact .cover .left{
+    width:45%;
+    float:left;
+    margin-left:5%;
+    height: 252px;
+}
+.contact .cover .left img{
+    width:100%;
+}
+.contact .cover .right{
+    width:45%;
+    float:right;
+    background:#90d89c;
+    margin-right:20px;
+    margin-right:5%;
+    height: 252px;
+    padding-top:6%;
+}
+.contact .cover .right button{
+    background: #000;
+    color:green;
+    border:0;
+    padding:10px;
+    cursor:pointer;
+}
