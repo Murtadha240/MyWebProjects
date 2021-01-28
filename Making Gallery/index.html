@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>welcome</title>
+	<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="gallery">
+            <div class="main">
+                <img onmouseover="a1()"  src="a.png" name="img1" alt="">
+                <img onmouseover="a2()"  src="b.png" name="img2" alt="" >
+                <img onmouseover="a3()"  src="c.png" name="img3" alt="">
+                
+                <div class="preview">
+                    <img src="a.png" name="preview" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function a1(){
+                preview.src = img1.src;
+            }
+            function a2(){
+                preview.src = img2.src;
+            }
+            function a3(){
+                preview.src = img3.src;
+            }
+            
+        </script>
+    </body>
+</html>

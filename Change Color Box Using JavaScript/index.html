@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>welcome</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="div1" onclick="changeColor('yellow')"></div>
+        <div class="div2" onclick="changeColor('red')"></div>
+        <div class="div3" onclick="changeColor('blue')"></div>
+        <div class="div4" onclick="changeColor('cyan')"></div>
+        
+        <div id="color"></div>
+        
+        <script>
+            function changeColor(y){
+                var x=document.getElementById("color");
+                x.style.backgroundColor=y;
+            }
+        </script>
+    </body>
+</html>

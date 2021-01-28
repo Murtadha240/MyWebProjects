@@ -1,0 +1,15 @@
+div{
+    width:30px;
+    height:30px;
+    float:left;
+    margin:5px;
+}
+.div1{background:yellow}
+.div2{background:red}
+.div3{background:blue}
+.div4{background:cyan}
+
+#color{
+    background: #fff;
+    border:1px solid black;
+}

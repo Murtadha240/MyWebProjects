@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>welcome</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        <!--overlay div-->
+        <div class="overlay">
+            <!--close-->
+            <a href="#" class="close" onclick="close()"> X </a>
+            <!--content of overlay div-->
+            <div class="content">
+                <a class="#">HOME</a>
+                <a class="#">ABOUT</a>
+                <a class="#">CONTACT</a>
+                <a class="#">ABOUT</a>
+            </div>
+        </div>
+        <!--open button-->
+
+        <span onclick="open()"> Navbar </span>
+        
+        
+                
+       
+        
+        <script>
+            var the= document.getElementById("mydiv");
+            function open(){
+                
+                the.style.transform="scale(1)";
+            }
+            function close(){
+                theDiv.style.transform="scale(0)";
+            }
+            
+           
+        </script>
+        
+        
+    </body>
+</html>

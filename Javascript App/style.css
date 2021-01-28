@@ -1,0 +1,40 @@
+body{
+    background:black;
+    color:green;
+}
+
+.container{
+    width:900px;
+    margin:auto;
+    background:rgba(37, 5, 44, 0.8);
+    padding:15px;
+}
+
+h1{
+    font-size:50px;
+}
+button{
+    background:rgba(46, 31, 31, 0.8);
+    color:lightgreen;
+    border:none;
+    padding:15px;
+    font-size:20px;
+    cursor:pointer;
+    width:200px;
+    border-radius:20px;
+    outline:none;
+}
+button:hover{
+    background:#923;
+}
+ul li{
+    font-size:15px;
+    list-style: none;
+    margin-bottom:10px;
+    cursor:pointer;
+    text-transform:capitalize;
+}
+.active{
+    background:black;
+    color:white;
+}

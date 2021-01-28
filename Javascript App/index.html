@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>welcome</title>
+	<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="heading">item here</h1>
+            <button onclick="add()" id="button"> add new </button>
+            <ul id="list">
+                <li  onclick="active()">first item</li>
+                <li>second item</li>
+                <li>third item</li>
+                <li>fourth item</li>
+                <li id="s">fifth item</li>
+            </ul>
+        </div>
+        
+        <script>
+            var the_heading =document.getElementById("heading"),
+                the_ul=document.getElementById("list"),
+                the_button=document.getElementById("button"),
+                the_li=document.getElementById("list").getElementsByTagName("li")
+                r=document.getElementById("s"),
+                    counter=1;
+
+            
+            /* the_li[0].addEventListener("click",function(){
+                the_heading.innerHTML=the_li[0].innerHTML;
+            }); */
+            /*for( var i=0;i<the_li.length;i++)
+                {
+                    the_li[i].addEventListener("click",active)
+                }*/
+            function active(){
+                the_heading.innerHTML+="hhhh";
+                this.classList.add("active");
+            } 
+            
+            function add(){
+                r.innerHTML+="<li>new </li>";
+                counter++;
+                
+            };
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>welcome</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img src="images/ba.jpg" alt="the image" id="the_img">
+        <!--model-->
+        <div class="model" id="the_model">
+            <span class="close">X</span>
+            <img  id="img" class="model-content">
+            <div id="caption">Test</div>
+        </div>
+        
+        <script>
+            // 1- get the model
+            // 2- get the content of the model 
+            // 3- get the close btn
+            // 4- when click on close btn hide the model
+            // 5- when click on esc btn hide the model
+            
+            /* get the model */
+            
+            var model=document.getElementById('the_model');
+            var img=document.getElementById('the_img');
+            /* get the content of the model */
+            var modelImage=document.getElementById('img')
+                modelCaption=document.getElementById('caption');
+            
+            img.onclick=function(){
+                model.style.display="block";
+                modelImage.src=this.src;
+                modelCaption.innerHTML=this.alt;
+            }
+            /*get the close btn*/
+            var close=document.getElementsByClassName('close')[0];
+            
+            /* when click on close btn hide the model*/
+            close.onclick=function() {
+                model.style.display="none"
+            }
+            /*when click on esc btn hide the model*/
+            document.onkeydown=function(ev){
+                if(ev.keyCode=="27"){
+                    model.style.display="none"
+                }
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background:#222;
+    color:lightgreen;
+}
+.main img{
+    width:100px;
+    height:80px;
+    border:2px solid lightgreen;
+    margin:5px;
+}
+.main img:hover{
+    border:2px solid black;
+    cursor:pointer;
+}
+.preview img{
+    width:800px;
+    height:500px;
+    border:2px solid #fff;
+}
