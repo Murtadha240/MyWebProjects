@@ -1,0 +1,229 @@
+body{
+    margin:0;
+    padding:0;
+    height:2000px;
+}
+.container{
+    width:1150px;
+    margin:auto;
+}
+.header{
+    width:100%;
+    height:350px;
+    background-color:blueviolet;
+}
+.header .heading{
+    width:50%;
+    float:left;
+    margin-top:100px;
+    border-right:1px solid #ddd;
+}
+.header .heading h2{
+    width:49%;
+    color:#fff;
+    line-height:1.8; /* space between words lines */
+    font-size:25px;
+}
+.header .heading h2 span:hover{
+    color:#934;
+    cursor:pointer;
+}
+.header .lorm{
+    border:1px solid black;
+    width:40%;
+    margin-left:3%;
+    margin-top:100px;
+    float:left; /* important to put all divs in queue*/
+    
+}
+.header .lorm p{
+    color:#fff;
+    line-height:1.8;
+    font-weight:bold;
+}
+.header .lorm button{
+    border:none;
+    background:none;
+    color:#fff;
+    font-size:20px;
+    background:cyan;
+    padding:15px; 
+    width:200px;
+    border-radius:50px;
+    outline:0;
+    cursor:pointer;
+}
+/* manga */
+.manga{
+    width:100%;
+    height:350px;
+    border-bottom:1px solid #483;
+    padding-top:50px;
+}
+.manga .learn{
+    border-right:1px solid black;
+    width:50%;
+    float:left;
+    
+}
+.manga .learn h2{
+    color:#777;
+    text-decoration:underline;
+}
+.manga .learn p{
+    line-height: 1.5;
+    color:#888;
+}
+.manga .learn button{
+    border:0;
+    background:#fff;
+    border:1px solid #DDD;
+    padding:15px;
+    border-radius:30px;
+    width:200px;
+    color:#1ac320;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline: 0;
+}
+.ipsum{
+    float:left;
+    width:40%;
+    margin-left:5%;
+    border:1px solid blue;
+    visibility:hidden;
+}
+.ipsum p{
+    line-height: 2px;
+    font-weight:bold;
+    font-size:20px;
+    margin-top:2px;
+}
+.ipsum i{
+    margin-right:3%;
+}
+
+
+.pharetra{
+    width:100%;
+    height:auto;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow: hidden;
+    background-color:#d1e4e5;
+    
+}
+
+.pharetra .part .he{
+    width:40%;
+    float:left;
+    padding-left:70px;
+    padding-top:50px
+    
+}
+.pharetra .part .he h2{
+    color:#777;
+    text-decoration: underline;
+}
+.pharetra .part .he p{
+    color:#888;
+    line-height:2;
+    font-weight:bold;
+}
+.pharetra .part .he button{
+    background-color:none;
+    border:1px solid #DDD;
+    width:150px;
+    border-radius:20px;
+    padding:15px;
+    font-size:20px;
+    color:#777;
+    text-transform:uppercase;
+    cursor:pointer;
+    
+}
+.pharetra .part .he button:hover{
+    background-color:#888;
+    color:#fff;
+}
+.clear{
+    clear: both;
+}
+.pharetra .part{
+    margin-bottom:10px;
+    border:1px solid black;
+    height:350px;
+    padding-top:20px;
+    
+}
+
+
+/* form */
+.form{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    background:lightgreen;
+    border-right:2px solid black;
+    padding-top:50px;
+}
+
+.form .inputs{
+    width:50%;
+    float:left;
+}
+.form .inputs p{
+    font-weight:bold;
+    color:#888;
+}
+.form .inputs input[type=text] ,input[type=email] {
+    width:250px;
+    height:50px;
+    padding-left:20px;
+    margin-bottom:10px;
+    font-size:20px;
+}
+.form .inputs textarea{
+    width:505px;
+    outline:none;
+    padding-left:15px;
+    font-size:20px;
+}
+
+.form .inputs input[type=button]{
+    width:150px;
+    border-radius:20px;
+    border:1px solid #DDD;
+    padding:15px;
+    margin-top:15px;
+    cursor:pointer;
+    background:#Fff;
+    text-transform: uppercase;
+    outline: none;
+}
+.form .links{
+    padding-top:50px;
+    padding-left:50px;
+    float:left;
+}
+.form .links p{
+    line-height:2.5;
+}
+.form .links p i{
+    padding-right:20px;
+    color:deeppink;
+}
+
+/* foter */
+
+
+.footer{
+    width:100%;
+    height:auto;
+    border-top:1px solid red;
+}
+.footer p{
+    text-align:center;
+    line-height: 150px;
+    color:#777;
+}

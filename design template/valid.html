@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>welcome</title>
+	<link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background:#DDD;
+            }
+            button{
+                width:200px;
+                color:#000;
+                border:1px solid #777;
+                border-radius:20px;
+                padding:15px;
+                font-size:30px;
+                cursor:pointer;
+                outline:none;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="valid()">Enter Your Name</button>
+        
+        <script>
+            function valid(){
+                var t=prompt("Name...");
+                if (t=="ahmed"){
+                    window.location="index.html";
+                }
+                else{
+                    alert("Wrong...")
+                }
+            }
+        </script>
+        
+        
+        
+        
+    </body>
+</html>

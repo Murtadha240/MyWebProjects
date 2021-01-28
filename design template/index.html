@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>welcome</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="heading">
+                <h2>
+                    askldfjaklsdjflkasdjf adjlkasjdflkasdjflkasd falskdjf;las <span>sssss</span>
+                </h2>
+            </div>
+            <div class="lorm">
+                <p> 
+                    kjhdf askjf alsjfoisa dfjaklsj
+                </p>
+                <button id="butt" onmousemove="hoverButton()" onmouseout="hover()" >get started</button>
+            </div>
+            </div>
+            
+        </div>
+        
+        <div class="manga">
+            <div class="container">
+                <div class="learn">
+                    <h2>aaaaaaaaaaaaaaaaaa</h2>
+                    <p> asf asdf asdf as fas fad asf as</p>
+                    <button  onclick="show()" ondblclick="hide()">learn more</button>
+                </div>
+                <div class="ipsum" id="sh">
+                    <p><i class="fas fa-air-freshener"></i> rtwer twer t wer </p>
+                    <p><i class="fas fa-air-freshener"></i> rtwer twer t wer </p>
+                    <p><i class="fas fa-air-freshener"></i> rtwer twer t wer </p>
+                    <p><i class="fas fa-air-freshener"></i> rtwer twer t wer </p>
+                    <p><i class="fas fa-air-freshener"></i> rtwer twer t wer </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="pharetra">
+            <div class="container"> <!-- to put all div in center-->
+                <div class="part">
+                    <img style="width:400px;height:320px; float:left;" src="r.png" onmouseout="hovered()">
+                    <div class="he">
+                        <h2>adfasdfj fkasjd flkasj</h2>
+                        <p> asdjfkjas asdfkjas lf</p>
+                        <button>details</button>
+                        <p> you hoverd:<span id="img1"  ></span></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="part">
+                    <img style="width:400px; height:320px; float:left;" src="r.png">
+                    <div class="he">
+                        <h2>adfasdfj fkasjd flkasj</h2>
+                        <p> asdjfkjas asdfkjas lf</p>
+                        <button>details</button>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="part">
+                    <img style="width:400px;height:320px; float:left;" src="r.png">
+                    <div class="he">
+                        <h2>adfasdfj fkasjd flkasj</h2>
+                        <p> asdjfkjas asdfkjas lf</p>
+                        <button>details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="form">
+            <div class="container">
+                <div class="inputs">
+                    <h2> adsjfl dfjsad</h2>
+                    <p> aklsjdf dfklsajf asjdfl</p>
+                    <form>
+                        <input type="text" placeholder="name"/>
+                        <input type="email" placeholder="Email">
+                        <textarea close="40" rows="10" placeholder="message"></textarea>
+                        <input type="button" value="send message"/>
+                    </form>
+                </div>
+                <div class="links">
+                    <p id="clicks"><i onclick="changeColor()" id="i" class="fab fa-facebook-f"></i>a sdkfjslkd fjlaksdf j</p>
+                    <p><i class="fab fa-twitter"></i>a sdkfjslkd fjlaksdf j</p>
+                    <p><i class="fab fa-instagram"></i>a sdkfjslkd fjlaksdf j</p>
+                    <p><i class="fas fa-home"></i>a sdkfjslkd fjlaksdf j</p>
+                    <p><i class="fas fa-envelope-open-text"></i>a sdkfjslkd fjlaksdf j</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="container">
+                <p> askjdfla sdfjlkas df </p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            function hoverButton(){
+                document.getElementById("butt").style.backgroundColor="black";
+                
+            }
+            function hover(){
+                document.getElementById("butt").style.backgroundColor="yellow";
+            }
+            
+        
+            function show(){
+                var n=document.getElementById("sh");
+                n.style.visibility="visible";
+            }
+            function hide(){
+                var n=document.getElementById("sh");
+                n.style.visibility="hidden";
+            }
+            
+            
+            
+            
+            var n=0;
+            function hovered(){
+                n=n+1;
+                document.getElementById("img1").innerHTML=n;
+}
+            
+            
+            function changeColor(){
+                
+                document.getElementById("clicks").style.color="yellow";
+                document.getElementById("clicks").style.textDecoration="underline";
+            }
+            
+            
+        </script>
+    </body>
+</html>
